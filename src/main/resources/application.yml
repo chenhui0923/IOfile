@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    name: xuexi
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/test
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    view:
+      suffix: .html
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+server:
+  servlet:
+    context-path: /test
+  port: 8080
+
+
+
+
+
+wq:
+  person:
+    lastName: 吴
+    age: 18
+    boss: true
+    birth: 2018/12/09
+    maps: {key1:value1,key2:value2}
+    list: [dog,cat,house]
+    dog:
+      name: 旺财
+      age: 3
