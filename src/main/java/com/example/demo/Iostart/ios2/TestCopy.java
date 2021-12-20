@@ -31,7 +31,7 @@ public class TestCopy {
             len = re.read(buf);
 
         }
-
+//cs
         re.close();
         fw.close();
     }
