@@ -30,6 +30,8 @@ public class TestObjectStream {
         System.out.println(dis.readBoolean());
         Date date = (Date) dis.readObject();
         System.out.println(date);
+        Student stu =(Student)dis.readObject();
+        System.out.println(stu);
         //关闭
         dis.close();
     }
@@ -45,6 +47,9 @@ public class TestObjectStream {
         dos.writeUTF("IOS学习");
         dos.writeBoolean(true);
         dos.writeObject(new Date());
+        Student stu =new Student(1,"zhagnsan",23,98.0);
+        stu.setClazz(new Clazz(1,"java01"));
+        dos.writeObject(stu);
         //关闭流
         dos.close();
 
