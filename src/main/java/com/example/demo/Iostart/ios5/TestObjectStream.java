@@ -7,7 +7,7 @@ import java.util.Date;
 /**
  *
  * 希望将各种基本数据类型方便写入到文件中并方便的读取出来
- *
+ *12
  */
 public class TestObjectStream {
     static File file= new File("F://学习//IO学习//ios5//rember.txt");
