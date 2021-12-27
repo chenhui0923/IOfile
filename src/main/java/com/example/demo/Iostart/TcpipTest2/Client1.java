@@ -6,19 +6,16 @@ import java.io.PrintStream;
 import java.net.Socket;
 
 public class Client1 {
-    public static final int port = 8080;
-    public static final String host = "localhost";
+    public static final int port = 4001;//8080
+    public static final String host = "192.168.30.222";//localhost
     public static void main(String[] args) {
         System.out.println("Client Start...");
         while (true) {
             Socket socket = null;
             try {
-                //创建一个流套接字并将其连接到指定主机上的指定端口号
-                socket = new Socket(host,port);
 
-                //读取服务器端数据
+                socket = new Socket(host,port);
                 BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-                //向服务器端发送数据
                 PrintStream out = new PrintStream(socket.getOutputStream());
                 System.out.print("请输入: \t");
                 String str = new BufferedReader(new InputStreamReader(System.in)).readLine();

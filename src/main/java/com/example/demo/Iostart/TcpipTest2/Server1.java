@@ -6,7 +6,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Server1 {
-    public static final int port = 8080;//监听的端口号
+    public static final int port = 4001;//监听的端口号
 
     public static void main(String[] args) {
         System.out.println("Server...\n");
