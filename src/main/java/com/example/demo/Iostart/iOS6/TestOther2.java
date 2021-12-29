@@ -2,6 +2,12 @@ package com.example.demo.Iostart.iOS6;
 
 import java.io.*;
 
+
+/**
+ * 转换
+ * InputStreamReader-->Reader
+ * OutputStreamWriter-->Writer
+ */
 public class TestOther2 {
     static File file1 = new File("F://学习//IO学习//ios5//rember.txt");
     static File file2 = new File("F://学习//IO学习//ios5//rember1.txt");
